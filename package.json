@@ -1,0 +1,31 @@
+{
+  "name": "anywhere_cover",
+  "version": "1.0.1",
+  "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "main": "src/app.js",
+  "bin": {
+    "anywhere_cover": "bin/anywhere_cover"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "pre-commit": "^1.2.2",
+    "typescript": "^3.8.3"
+  },
+  "pre-commit": [
+    "fix",
+    "lint"
+  ],
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "handlebars": "^4.7.6",
+    "yargs": "^15.3.1",
+    "zlib": "^1.0.5"
+  }
+}
